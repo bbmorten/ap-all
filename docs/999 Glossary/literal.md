@@ -1,6 +1,6 @@
-# The concept What is a literal in programming languages?
+# The concept literal in a programming language?
 
-In programming languages, a "literal" refers to a notation for representing a fixed value directly. Literals provide a way of expressing specific values within the source code of a program. Depending on the programming language, there are various types of literals, including:
+In programming languages, a "literal" refers to a notation for **representing a fixed value directly**. Literals provide a way of expressing specific values within the source code of a program. Depending on the programming language, there are various types of literals, including:
 
 1. **Numeric Literals**: These are unambiguous representations of integer or floating-point numbers. Examples in most languages would include:
    - `123` (an integer literal)
