@@ -9,5 +9,11 @@
 - Documentation Site and Docker Desktop. Markdown language
 - How to take notes during study
 - Tell to learn motto
-- Bıdı bıdı
+
+##  Notes
+
+- Understanding English
+- Study Chapter Key Terms
+- Pseudocode
+
 
