@@ -1,15 +1,35 @@
-# Day 2 - 202310XX
+# Day 2 - 20231023
 
-[Java Examples Repo by Bülent Morten](https://github.com/bbmorten/java-study.git)
+```shell
+import java.util.Scanner;
 
-[Essentials Java AP CompSci](https://github.com/Apress/essential-java-AP-CompSci.git)
+public class IPv4ToBinaryConverter {
 
-##  Essentials Java AP CompSci
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-Get the necessary files from the first repo listed.
+        System.out.print("Enter IPv4 address: ");
+        String ipv4Address = scanner.nextLine();
 
-- ...
-- Chapter 17 - Variables
-- Chapter 18 - Math!
-- Chapter 19 - Math methods
-- JShell Docs <https://docs.oracle.com/en/java/javase/20/jshell/snippets.html#GUID-63DBC3E7-6EF2-498D-8638-94867ED10F76>
+        String binaryRepresentation = convertIPv4ToBinary(ipv4Address);
+        System.out.println("Binary representation: " + binaryRepresentation);
+    }
+
+    private static String convertIPv4ToBinary(String ipv4Address) {
+        StringBuilder binaryRepresentation = new StringBuilder();
+        
+        String[] octets = ipv4Address.split("\\.");
+        for (String octet : octets) {
+            int octetInt = Integer.parseInt(octet);
+            String binaryOctet = String.format("%08d", Integer.parseInt(Integer.toBinaryString(octetInt)));
+            binaryRepresentation.append(binaryOctet).append(".");
+        }
+
+        // Remove the last dot
+        binaryRepresentation.setLength(binaryRepresentation.length() - 1);
+
+        return binaryRepresentation.toString();
+    }
+}
+
+```
