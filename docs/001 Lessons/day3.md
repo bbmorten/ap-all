@@ -1,13 +1,12 @@
 # Day 3 - 20231031
 
-## Hexadecimal
-
+##  Hexadecimal
 
 ```shell
 en0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
-	ether 3c:06:30:27:7d:56
-	inet6 fe80::14dc:de72:2809:f35d/64 secured scopeid 0xc
-	inet 192.168.70.104/24 brd 192.168.70.255 en0
+ ether 3c:06:30:27:7d:56
+ inet6 fe80::14dc:de72:2809:f35d/64 secured scopeid 0xc
+ inet 192.168.70.104/24 brd 192.168.70.255 en0
 ```
 
 Physical Address (Layer 2) a.k.a MAC (Media Access Control) Address : ether 3c:06:30:27:7d:56
@@ -20,12 +19,11 @@ Decimal --> Hexadecimal
 
 Hexadecimal digits (0-F, 0-9,ABCDEF)
 
-50 | 16 -> 32 
+50 | 16 -> 32
 
 FF -> 255
 
 1111 1111 -> 255
-
 
 ```shell
 jshell> 3000/256
